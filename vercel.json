@@ -2,7 +2,7 @@
   "rewrites":  [
     {"source": "/(.*)", "destination": "/"}
   ],
-  "buildCommand": "chmod +x ./node_modules/@cloudflare/workerd-linux-64/bin/workerd && yarn build",
-  "installCommand": "yarn install",
+  "buildCommand": "yarn build",
+  "installCommand": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install",
   "framework": "nextjs"
 }
